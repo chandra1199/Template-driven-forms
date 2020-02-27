@@ -1,0 +1,33 @@
+@import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
+
+h1 {
+    text-align: center;
+    color: rgb(32, 144, 218);
+}
+.form-control {
+    color: lightblue;
+    font-size: 20px;
+}
+.form-group {
+    color: rgb(228, 71, 24);
+    font-weight: 200;
+    font-style: bold;
+    font-size: 30px;
+}
+.form-label {
+    color: rgb(0, 202, 252);
+    font-weight: 300;
+    font-size: 25px;
+}
+.checkbox {
+    color: black;
+    font-size: medium; 
+}
+.radio-inline {
+    color: black;
+    font-size: large;
+}
+input[type=text]:focus-visible {
+     background-color: aliceblue;
+     background-position: center; 
+}

@@ -1,0 +1,49 @@
+<div class="container">
+      <h1>Hero Form</h1>
+    <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+        <div class="form-label">
+        <label>Hero From:</label>
+        </div>
+        <div class="radio-inline">
+            <label><input type="radio" name="optradio">south</label>
+        </div>
+        <div class="radio-inline">
+            <label><input type="radio" name="optradio">north</label>
+        </div>
+        <div class="form-group">
+            <label for="dob">Date Of Birth</label>
+            <input type="date" class="form-control" name="dob" id="dob">
+        </div>
+        <div class="form-label">
+            <label>Hero Qualities:</label>
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox">Handsome</label>
+        </div>
+        <div class="checkbox">    
+            <label><input type="checkbox">6Feet</label>
+        </div>
+        <div class="checkbox">  
+            <label><input type="checkbox">SeniorHero</label>
+        </div>  
+        <div class="checkbox">  
+            <label><input type="checkbox">UpcomingHero</label>
+        </div>    
+        
+       <div class="form-group">
+        <label for="films">Hero Films</label>
+        <select class="form-control" id="films" required>
+        <option *ngFor="let Film of films" [value]="Film">{{Film}}</option>
+        </select>
+        </div> 
+        <div class="checkbox">
+            <label><input type="checkbox">Remember me</label>
+        </div>
+
+        <button type="submit" class="btn btn-success" (click)="onSubmit()" >Submit</button>
+    </form>
+</div>
